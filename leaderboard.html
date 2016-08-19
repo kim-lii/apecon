@@ -1,9 +1,7 @@
-<!--!! edited by vivienne 9:59 !!-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Extinction Evasion</title>
+  <title>leaderboard.html</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,7 +11,6 @@
   <script type="text/javascript" src="js/phaser.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src = "js/main.js"> </script>
 </head>
 
 <body>
@@ -32,25 +29,31 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Extinction Evasion</h1>
-  <p>Avoid the obstacles to keep each endangered animal safe!</p>
-</div>
+  <h1>The Leaderboard</h1>
+  <p>Who's really dedicated to helping save animals in danger of extinction?</p>
 
 <p style="text-align:center;"><img src="https://i.imgur.com/9LqGJFF.png" alt="waves"></p>
-
-<div class="container">
-  <div class="row">
-  	<div class="col-sm-12 text-center">
-  	<h3><center>Use the ENTER and SHIFT keys to navigate the turtle around the plastic bags and to the jellyfish</center></h3>
-    <h4><center>(Left handers can use "W" and "S" for convenience)</center></h4>
-      <center><div id="cont"></div></center>
-
-  </div>
+ <table class="table">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="genericrow" class="scorerow"  style="display:none">
+        <td class="username">John</td>
+        <td class="score">Doe</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-</div>
-<br>
 
 
+
+  <div id="leaderboard"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/leaderboard.js"></script>
 
 </body>
 
